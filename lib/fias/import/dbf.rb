@@ -56,6 +56,7 @@ module Fias
 
       HOUSE_TABLES = n_tables('house')
       NORDOC_TABLES = n_tables('nordoc')
+      ADDROB_TABLES = n_tables('addrob')
 
       TABLES = {
         address_object_types: 'SOCRBASE.DBF',
@@ -74,6 +75,8 @@ module Fias
         HOUSE_TABLES
       ).merge(
         NORDOC_TABLES
+      ).merge(
+        ADDROB_TABLES
       )
 
       DEFAULT_ENCODING = Encoding::CP866
