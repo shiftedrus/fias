@@ -20,8 +20,8 @@ module Fias
         end
       end
 
-      def copy
-        prepare
+      def copy(truncate = true)
+        prepare if truncate
         copy_into
       end
 
