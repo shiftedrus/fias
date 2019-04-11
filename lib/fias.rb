@@ -125,7 +125,7 @@ Fias.configure do |config|
   config.add_name('станица', 'ст-ца', %w(стн ст))
   config.add_name('хутор', 'х.')
   config.add_name('абонентский ящик', 'а/я')
-  config.add_name('аллея', 'аллея')
+  config.add_name('аллея', 'аллея', ['ал.'])
   config.add_name('берег', 'берег')
   config.add_name('бульвар', 'б-р', %w(бул бульв))
   config.add_name('бугор', 'бугор')
@@ -140,7 +140,7 @@ Fias.configure do |config|
   config.add_name('километр', 'км.')
   config.add_name('кольцо', 'кольцо')
   config.add_name('коса', 'коса')
-  config.add_name('линия', 'линия', ['лин'])
+  config.add_name('линия', 'линия', ['лин', 'лн.'])
   config.add_name('мост', 'мост')
   config.add_name('набережная', 'наб.')
   config.add_name('парк', 'парк')
@@ -177,6 +177,12 @@ Fias.configure do |config|
   config.add_name('садовое товарищество', 'снт')
   config.add_name('фермерское хозяйство', 'ф/х')
   config.add_name('коттеджный поселок', 'кп', ['коттеджный'])
+  config.add_name('территория садоводческих некоммерческих товариществ', 'тер. СНТ')
+  config.add_name('территория товарищества собственников недвижимости', 'тер. ТСН')
+  config.add_name('территория гаражно-строительного кооператива', 'тер. ГСК')
+  config.add_name('территория дачных некоммерческих товариществ', 'тер. ДНТ')
+  config.add_name('городской округ', 'г.о.')
+  config.add_name('городской поселок', 'гп')
 
   config.add_exception(
     'Чувашская Республика - Чувашия', 'Чувашия'
